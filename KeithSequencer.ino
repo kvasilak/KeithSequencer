@@ -72,8 +72,10 @@ void setup(void)
   for(i=0;i<sizeof(ElWire); i++)
   {
     pinMode(ElWire[i],OUTPUT);
-    digitalWrite(ElWire[i],HIGH);
+    digitalWrite(ElWire[i], HIGH);
   }
+
+  delay(10000);
 
   AllOff();
 }
